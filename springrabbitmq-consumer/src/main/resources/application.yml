@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: springrabbitmqdemo-consumer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+server:
+  port: 8088
+
+
+
+rabbitmqBindingMap:
+  test1Binding:
+    queueName: test1Queue
+    exchangeName: testExchange
+    routingKey: test1
+    consumerBeanName: test1Consumer
+  test2Binding:
+    queueName: test2Queue
+    exchangeName: testExchange
+    routingKey: test2
+    consumerBeanName: test2Consumer

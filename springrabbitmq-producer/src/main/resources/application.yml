@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: springrabbitmqdemo-producer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+server:
+  port: 8080
+
+
+rabbitmqProducerMap:
+  testProducer1:
+    exchangeName: testExchange
+    routingKey: test1
+    producerBeanName: test1Producer
+  testProducer2:
+    exchangeName: testExchange
+    routingKey: test2
+    producerBeanName: test2Producer
+
+
