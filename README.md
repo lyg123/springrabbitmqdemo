@@ -1,7 +1,8 @@
 # springrabbitmqdemo
 基于spring的主题发布和订阅代码
 
-# 原理，基于spring启动的时候加载发布订阅配置，发送基于json的消息，具体代码请看`RabbitmqConfig.java`
+# 原理
+基于spring启动的时候加载发布订阅配置，发送基于json的消息，具体代码请看`RabbitmqConfig.java`
 
 # 发布消息例子
 ## 配置application.yml
